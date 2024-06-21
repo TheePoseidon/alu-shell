@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script displays a list of currently running processes, for all users, including those wthout a TTY, in a user-oriented format, and shows the process hierachy.
 echo "List of currently running processes:"
-ps aux
+ps -e --forest -o pid,user,%cpu,%mem,tty,stat,start,time,cmd
 echo
 echo "Process hierachy:"
-pstree -A -P
+ps -e --forest -o pid,ppid,user,%cpu,%mem,tty,stat,start,time,cmd
