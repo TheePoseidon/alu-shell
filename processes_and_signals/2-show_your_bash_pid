@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Using ps to list all processes
+# Grep for lines
+ps aux --forest | grep "bash"
