@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#use loop to print Best School
+
+counter=0
+while [ $counter -lt 10 ]
+do
+  echo "Best School"
+  ((counter++))
+done
